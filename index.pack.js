@@ -416,6 +416,9 @@ var _Header2 = _interopRequireDefault(_Header);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//hellp 
+
+
 function App() {
   console.log('above fetch in app');
 
@@ -503,7 +506,7 @@ if (process.env.NODE_ENV === 'production') {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -521,9 +524,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-var apiKey = process.env.API_KEY;
-var url = 'https://api.openai.com/v1/images/generations';
-var bearer = 'Bearer ' + apiKey;
+// const apiKey = process.env.API_KEY;
+// const url = `https://api.openai.com/v1/images/generations`;
+// const bearer = 'Bearer ' + apiKey;
 var paramdesc = 'Generate a visually imposing image from this description in the style of Monet ';
 
 function Card(props) {
@@ -596,7 +599,7 @@ function Card(props) {
       setLink = _useState4[1];
 
   (0, _react.useEffect)(function () {
-    callAI(props.item.description);
+    //  callAI(props.item.description);
   }, []);
 
   if (loading) {
@@ -659,7 +662,6 @@ function Card(props) {
     )
   );
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 7 */
