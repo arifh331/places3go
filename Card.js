@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-// const apiKey = process.env.API_KEY;
-// const url = `https://api.openai.com/v1/images/generations`;
-// const bearer = 'Bearer ' + apiKey;
+const apiKey = process.env.API_KEY;
+const url = `https://api.openai.com/v1/images/generations`;
+const bearer = 'Bearer ' + apiKey;
 const paramdesc = 'Generate a visually imposing image from this description in the style of Monet ';
 
 export default function Card(props) {
@@ -10,7 +10,7 @@ export default function Card(props) {
   const [link, setLink] = useState('');
 
   useEffect(() => {
-  //  callAI(props.item.description);
+   callAI(props.item.description);
   }, []);
 
   async function callAI(imgdesc) {
